@@ -28,8 +28,8 @@ class QRDetector(object):
         
     def process_image(self, frame):
         decoded_objs = self.decode(frame)
-        # 認識したQRコードの位置を描画する
-        # frame = self.draw_positions(frame, decoded_objs)
+        認識したQRコードの位置を描画する
+        frame = self.draw_positions(frame, decoded_objs)
 
         detected = False 
         if len(decoded_objs) > 0:
